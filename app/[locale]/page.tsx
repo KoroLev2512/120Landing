@@ -25,6 +25,7 @@ import {
 import { motion } from "framer-motion";
 import { anim_reveal_parent, anim_reveal_child } from "@/lib/anims";
 import LanguageSwitch from "@/components/LanguageSwitch";
+import Link from "next/link";
 
 export default function Home() {
   const t = useTranslations("Index");
@@ -202,15 +203,21 @@ export default function Home() {
             variants={anim_reveal_child}
             className="inline-flex items-center gap-x-1.5"
           >
-            <Button className="rotate-[-4deg]" variant={"icon"} size={"icon"}>
-              <IconBrandTelegram className="size-[18px] rotate-0 sm:size-5" />
-            </Button>
-            <Button className="rotate-[2deg]" variant={"icon"} size={"icon"}>
-              <IconBrandInstagram className="size-[18px] rotate-0 sm:size-5" />
-            </Button>
-            <Button className="rotate-[4deg]" variant={"icon"} size={"icon"}>
-              <IconBrandTelegram className="size-[18px] rotate-0 sm:size-5" />
-            </Button>
+            <Link href={"https://t.me/block_120"}>
+              <Button className="rotate-[-4deg]" variant={"icon"} size={"icon"}>
+                <IconBrandTelegram className="size-[18px] rotate-0 sm:size-5" />
+              </Button>
+            </Link>
+            <Link href={"https://www.instagram.com/120.blockk?igsh=cWJydTBreG95YWcz&utm_source=qr"}>
+              <Button className="rotate-[2deg]" variant={"icon"} size={"icon"}>
+                <IconBrandInstagram className="size-[18px] rotate-0 sm:size-5" />
+              </Button>
+            </Link>
+            <Link href={"https://t.me/block_120en"}>
+              <Button className="rotate-[4deg]" variant={"icon"} size={"icon"}>
+                <IconBrandTelegram className="size-[18px] rotate-0 sm:size-5" />
+              </Button>
+            </Link>
           </motion.div>
           <motion.p
             variants={anim_reveal_child}
