@@ -1,0 +1,52 @@
+{
+  "Index": {
+    "hero": {
+      "i1": "120 is a brand, inspired by street culture, but open to all forms of creativity. \n\nWe strive to create a bold style with love that can turn ambitions into reality.",
+      "i2": "To achieve this, we are launching our TMA application. \n\nYou can post directly in the app, share your creativity, and earn $Block tokens!"
+    },
+    "learn_more": {
+      "button": "Learn more",
+      "text": "\"120\" is a brand born in skateboarding and graffiti culture. We released 2 t-shirt collections and organized 2 parties in 2021, but then our activities ceased.\n\nNow we are building \"120\" not only as a brand, but as a full-fledged community of creative individuals.\n\nWe believe there is a need for a platform where creators can find like-minded people and a friendly community. The marketplace features and $Block token rewards will help novice creators monetize their art, and IRL events will bring creativity from online to offline.\n\nThis support for art will provide many paths for development for both beginners and established creators."
+    },
+    "faq": {
+      "heading": "Questions",
+      "questions": {
+        "q1": {
+          "q": "What are \"120Block\" tokens awarded for?",
+          "a": "\"120Block\" tokens are awarded for content related to the \"120\" movement. After post verification and evaluation, the number of tokens is determined. Creative, original, and large-scale works of art are rewarded with significant rewards. Tokens can also be earned by participating in \"120\" events. P.S. For collaboration with the project, write a proposal in the \"Ideas and Suggestions💡\" topic in the Telegram chat, rewards are also given for this!"
+        },
+        "q2": {
+          "q": "What type of content is suitable for publication?",
+          "a": "Any content that does not contradict the rules of the Telegram platform and the internal rules of 120Block is suitable for publication. This can include paintings, art, music, graffiti, extreme videos, theatrical performances. We encourage all forms of creativity, as long as it somehow relates to the \"120\" community, for example, graffiti with the numbers \"120\", or a sign in a field with the same numbers, anything goes!"
+        },
+        "q3": {
+          "q": "What type of content is prohibited for publication?",
+          "a": "Prohibited content includes: any violence, pornography, as well as any content containing insults, threats, and expressions of hatred towards other users or groups."
+        },
+        "q4": {
+          "q": "Why was my post not accepted?",
+          "a": "Posts are usually rejected due to non-compliance with platform rules. If you believe this is a mistake, submit the post for re-evaluation."
+        }
+      }
+    },
+    "roadmap": {
+      "heading": "Our Plans",
+      "items": {
+        "i1": "Skate contest for cryptocurrency",
+        "i2": "Launch of referral system",
+        "i3": "Beta test launch",
+        "i4": "Secret room launch",
+        "i5": "Launch of the project in Europe",
+        "i6": "\"120\" gathering",
+        "i7": "Integration of marketplace into the app",
+        "i8": "$Block listing"
+      }
+    },
+    "calltoaction": {
+      "heading": "We've been waiting for you!",
+      "text": "Let's build a free and creative community together!",
+      "or": "or",
+      "button": "Launch the application"
+    }
+  }
+}
