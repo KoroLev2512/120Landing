@@ -62,7 +62,7 @@ const config = {
         "paragraph-sm": [
           "14px",
           {
-            lineHeight: "14px",
+            lineHeight: "15px",
             letterSpacing: "-0.02em",
             fontWeight: "500",
           },

@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://120-landing.vercel.app"),
   title: "120 BLOCK",
   keywords: ["120 block", "120", "ton", "telegram"],
-  themeColor: "#22A6F5",
   description:
     "120 is a brand, inspired by street culture, but open to all forms of creativity. ",
   openGraph: {

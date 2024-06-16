@@ -1,6 +1,6 @@
 "use client";
 
-import { IconCubeFill } from "@irsyadadl/paranoid";
+import { IconCubeFill, IconX } from "@irsyadadl/paranoid";
 import { Button } from "./ui/button";
 import Image from "next/image";
 
@@ -95,6 +95,7 @@ const LearnMoreComponent = () => {
                 placeholder="blur"
                 className="absolute bottom-0 w-full rounded-[24px]"
               />
+              <IconX className="absolute right-4 top-4" />
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}

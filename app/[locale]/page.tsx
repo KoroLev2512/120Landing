@@ -104,39 +104,73 @@ export default function Home() {
             {t("hero.i2")}
           </motion.p>
         </motion.section>
-        <LearnMoreComponent />
       </div>
       <motion.section
         viewport={{ once: true }}
         whileInView="show"
         initial="hidden"
         variants={anim_reveal_parent}
-        className="flex w-full flex-col items-start gap-y-5"
+        className="flex flex-col items-center gap-y-1.5"
       >
-        <motion.h2
-          variants={anim_reveal_child}
-          className="text-paragraph-md text-app-text sm:text-paragraph-lg"
-        >
-          {t("faq.heading")}
-        </motion.h2>
-        <Accordion
-          className="flex w-full flex-col gap-y-2.5"
-          type="single"
-          collapsible
-        >
-          {faqQuestions.map((i, index) => {
-            return (
-              <motion.div variants={anim_reveal_child} key={index}>
-                <AccordionItem value={i.value}>
-                  <AccordionTrigger className="text-start">
-                    {i.trigger}
-                  </AccordionTrigger>
-                  <AccordionContent>{i.content}</AccordionContent>
-                </AccordionItem>
-              </motion.div>
-            );
-          })}
-        </Accordion>
+        <motion.div variants={anim_reveal_child}>
+          <Image
+            src={IconMap}
+            alt="Map Icon"
+            placeholder="blur"
+            quality={100}
+            className="size-[52px] sm:size-[72px]"
+          />
+        </motion.div>
+        <motion.div className="flex flex-col items-center gap-y-1">
+          <motion.h2
+            variants={anim_reveal_child}
+            className="whitespace-pre-wrap text-center text-heading-md sm:text-heading-lg"
+          >
+            {t("calltoaction.heading")}
+          </motion.h2>
+          <motion.p
+            variants={anim_reveal_child}
+            className="whitespace-pre-wrap text-center text-paragraph-md text-app-text sm:max-w-[338px] sm:text-paragraph-lg"
+          >
+            {t("calltoaction.text")}
+          </motion.p>
+        </motion.div>
+        <motion.div className="flex flex-col items-center gap-y-3 pt-3">
+          <motion.div
+            variants={anim_reveal_child}
+            className="inline-flex items-center gap-x-1.5"
+          >
+            <Link href={"https://t.me/block_120"}>
+              <Button className="rotate-[-4deg] relative" variant={"icon"} size={"icon"}>
+                <IconBrandTelegram className="size-[18px] rotate-0 sm:size-5" />
+                <p className="text-paragraph-sm sm:text-paragraph-md absolute sm:-bottom-2 -bottom-1 -right-1 drop-shadow-sm">🇷🇺</p>
+              </Button>
+            </Link>
+            <Link href={"https://www.instagram.com/120.blockk?igsh=cWJydTBreG95YWcz&utm_source=qr"}>
+              <Button className="rotate-[2deg]" variant={"icon"} size={"icon"}>
+                <IconBrandInstagram className="size-[18px] rotate-0 sm:size-5" />
+              </Button>
+            </Link>
+            <Link href={"https://t.me/block_120en"}>
+              <Button className="rotate-[4deg] relative" variant={"icon"} size={"icon"}>
+                <IconBrandTelegram className="size-[18px] rotate-0 sm:size-5" />
+                <p className="text-paragraph-sm sm:text-paragraph-md absolute sm:-bottom-2 -bottom-1 -right-1 drop-shadow-sm">🇺🇸</p>
+              </Button>
+            </Link>
+          </motion.div>
+          <motion.p
+            variants={anim_reveal_child}
+            className="text-paragraph-md text-app-text sm:text-paragraph-lg"
+          >
+            {t("calltoaction.or")}
+          </motion.p>
+          <motion.div variants={anim_reveal_child}>
+            <Button className="disabled opacity-50 cursor-not-allowed active:scale-100" onClick={() => alert("The app is not finished!")}>
+              <IconCubeFill className="size-[18px] sm:size-5" />{" "}
+              {t("calltoaction.button")}
+            </Button>
+          </motion.div>
+        </motion.div>
       </motion.section>
       <motion.section
         viewport={{ once: true }}
@@ -168,71 +202,39 @@ export default function Home() {
           })}
         </Roadmap>
       </motion.section>
+      <LearnMoreComponent />
       <motion.section
         viewport={{ once: true }}
         whileInView="show"
         initial="hidden"
         variants={anim_reveal_parent}
-        className="flex h-[70vh] flex-col items-center gap-y-1.5"
+        className="flex w-full flex-col items-start gap-y-5"
       >
-        <motion.div variants={anim_reveal_child}>
-          <Image
-            src={IconMap}
-            alt="Map Icon"
-            placeholder="blur"
-            quality={100}
-            className="size-[52px] sm:size-[72px]"
-          />
-        </motion.div>
-        <motion.div className="flex flex-col items-center gap-y-1">
-          <motion.h2
-            variants={anim_reveal_child}
-            className="whitespace-pre-wrap text-center text-heading-md sm:text-heading-lg"
-          >
-            {t("calltoaction.heading")}
-          </motion.h2>
-          <motion.p
-            variants={anim_reveal_child}
-            className="whitespace-pre-wrap text-center text-paragraph-md text-app-text sm:max-w-[338px] sm:text-paragraph-lg"
-          >
-            {t("calltoaction.text")}
-          </motion.p>
-        </motion.div>
-        <motion.div className="flex flex-col items-center gap-y-3 pt-3">
-          <motion.div
-            variants={anim_reveal_child}
-            className="inline-flex items-center gap-x-1.5"
-          >
-            <Link href={"https://t.me/block_120"}>
-              <Button className="rotate-[-4deg]" variant={"icon"} size={"icon"}>
-                <IconBrandTelegram className="size-[18px] rotate-0 sm:size-5" />
-              </Button>
-            </Link>
-            <Link href={"https://www.instagram.com/120.blockk?igsh=cWJydTBreG95YWcz&utm_source=qr"}>
-              <Button className="rotate-[2deg]" variant={"icon"} size={"icon"}>
-                <IconBrandInstagram className="size-[18px] rotate-0 sm:size-5" />
-              </Button>
-            </Link>
-            <Link href={"https://t.me/block_120en"}>
-              <Button className="rotate-[4deg]" variant={"icon"} size={"icon"}>
-                <IconBrandTelegram className="size-[18px] rotate-0 sm:size-5" />
-              </Button>
-            </Link>
-          </motion.div>
-          <motion.p
-            variants={anim_reveal_child}
-            className="text-paragraph-md text-app-text sm:text-paragraph-lg"
-          >
-            {t("calltoaction.or")}
-          </motion.p>
-          <motion.div variants={anim_reveal_child}>
-            <Button onClick={() => alert("The app is not finished!")}>
-              <IconCubeFill className="size-[18px] sm:size-5" />{" "}
-              {t("calltoaction.button")}
-            </Button>
-          </motion.div>
-        </motion.div>
-        <p className="pt-6 text-paragraph-sm text-black/20 sm:text-paragraph-md">
+        <motion.h2
+          variants={anim_reveal_child}
+          className="text-paragraph-md text-app-text sm:text-paragraph-lg"
+        >
+          {t("faq.heading")}
+        </motion.h2>
+        <Accordion
+          className="flex w-full flex-col gap-y-2.5"
+          type="single"
+          collapsible
+        >
+          {faqQuestions.map((i, index) => {
+            return (
+              <motion.div variants={anim_reveal_child} key={index}>
+                <AccordionItem value={i.value}>
+                  <AccordionTrigger className="text-start">
+                    {i.trigger}
+                  </AccordionTrigger>
+                  <AccordionContent>{i.content}</AccordionContent>
+                </AccordionItem>
+              </motion.div>
+            );
+          })}
+        </Accordion>
+        <p className="pt-6 text-paragraph-sm w-full text-center text-black/20 sm:text-paragraph-md">
           © 120BLOCK 2024
         </p>
       </motion.section>

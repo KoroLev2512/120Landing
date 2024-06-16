@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "gradient-blue drop-shadow-md hover:rotate-[-2deg] active:scale-90 transition-all duration-300 border-[3px] hover:bg-[#A4D5F2] border-white text-zinc-50",
+          "gradient-blue drop-shadow-md hover:rotate-[-2deg] active:scale-90 transition-all duration-300 border-[3px] hover:bg-[#A4D5F2] border-white",
         icon: "bg-app-blue border-2 border-white drop-shadow-md hover:-translate-y-1.5 hover:rotate-[8deg] active:-translate-y-2 transition-transform duration-300 ease-in-out",
       },
       size: {
