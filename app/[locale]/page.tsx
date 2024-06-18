@@ -140,21 +140,14 @@ export default function Home() {
             variants={anim_reveal_child}
             className="inline-flex items-center gap-x-1.5"
           >
-            <Link href={"https://t.me/block_120"}>
+            <Link href={t("calltoaction.telegram_link")}>
               <Button className="rotate-[-4deg] relative" variant={"icon"} size={"icon"}>
                 <IconBrandTelegram className="size-[18px] rotate-0 sm:size-5" />
-                <p className="text-paragraph-sm sm:text-paragraph-md absolute sm:-bottom-2 -bottom-1 -right-1 drop-shadow-sm">🇷🇺</p>
               </Button>
             </Link>
             <Link href={"https://www.instagram.com/120.blockk?igsh=cWJydTBreG95YWcz&utm_source=qr"}>
               <Button className="rotate-[2deg]" variant={"icon"} size={"icon"}>
                 <IconBrandInstagram className="size-[18px] rotate-0 sm:size-5" />
-              </Button>
-            </Link>
-            <Link href={"https://t.me/block_120en"}>
-              <Button className="rotate-[4deg] relative" variant={"icon"} size={"icon"}>
-                <IconBrandTelegram className="size-[18px] rotate-0 sm:size-5" />
-                <p className="text-paragraph-sm sm:text-paragraph-md absolute sm:-bottom-2 -bottom-1 -right-1 drop-shadow-sm">🇺🇸</p>
               </Button>
             </Link>
           </motion.div>

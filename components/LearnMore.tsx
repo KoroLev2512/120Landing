@@ -34,6 +34,7 @@ const LearnMoreComponent = () => {
         <div className="gradient-background absolute -bottom-6 z-[5] h-[110px] w-full sm:h-[170px]" />
         <motion.div
           variants={anim_reveal_child}
+          
           className="inline-flex items-end -space-x-[55px] sm:-space-x-20"
         >
           <Image
@@ -83,7 +84,7 @@ const LearnMoreComponent = () => {
               animate={{ opacity: 1, y: 0, rotate: -0.87, filter: "blur(0px)" }}
               exit={{ opacity: 0, y: 1000 }}
               transition={{ duration: 0.5, type: "spring" }}
-              className="fixed z-10 flex w-full max-w-[350px] -rotate-[0.87deg] transform flex-col items-center justify-start rounded-[24px] border-[6px] border-white bg-app-background pt-6 sm:h-full sm:max-h-[865px] sm:max-w-[723px] sm:pt-[42px]"
+              className="fixed z-10 flex w-full sm:aspect-auto max-w-[350px] -rotate-[0.87deg] transform flex-col items-center justify-start rounded-[24px] border-[6px] border-white bg-app-background pt-6 sm:h-full sm:max-h-[865px] sm:max-w-[723px] sm:pt-[42px]"
             >
               <p className="z-[1] max-w-[300px] whitespace-pre-wrap pb-[180px] text-paragraph-sm text-app-text sm:max-w-[481px] sm:text-[17px] sm:text-paragraph-md sm:leading-[25px]">
                 {t("learn_more.text")}
@@ -95,7 +96,7 @@ const LearnMoreComponent = () => {
                 placeholder="blur"
                 className="absolute bottom-0 w-full rounded-[24px]"
               />
-              <IconX className="absolute right-4 top-4" />
+              <IconX onClick={closePopup} className="absolute size-4 sm:size-5 right-4 top-4 text-app-text/60 hover:text-app-text duration-300 transition-all hover:rotate-2 cursor-pointer" />
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
