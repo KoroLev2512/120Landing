@@ -1,6 +1,6 @@
-![Image alt](https://github.com/120-block/120SocialNetwork/blob/dev/public/Frame%20120block.png)
+![Image alt](https://github.com/KoroLev2512/120Landing/blob/main/public/Frame%20120block.png)
 
-# MWS: your solution in the digital world
+# 120Block: a new look at street culture
 
 Look at the [NextJS documentation](https://nextjs.org/docs) and [React documentation](https://nextjs.org/docs) to learn more info about stack.
 
@@ -24,7 +24,7 @@ npm run build
 
 ## Development Server
 
-Start the development server on `http://localhost:3002`:
+Start the development:
 
 ```bash
 # npm
@@ -35,24 +35,17 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `src/pages/index.tsx`. The page auto-updates as you edit the file.
 
-This project uses MontserratAlternates local fonts.
-
 ## Pages
 
 1. Home page
 
 ## Interface Components
 
-- Header
-- Carousel
-- Checkboxes
-- Filter buttons
-- Language flag
-- Footer
+- Changer languages
 
 ## Status
 
-At the moment the project is in the process of refactoring from Ajax to React.js.
+At the moment this project is in production, you can find it at the link [120Block](https://120block.ru/)
 
 ## Contacts
 
